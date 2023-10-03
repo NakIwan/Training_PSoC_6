@@ -1,0 +1,62 @@
+16:39:30 **** Incremental Build of configuration Debug for project Blinked_PDL_HAL ****
+"C:\\Users\\bahariridwan\\ModusToolbox\\tools_3.1\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/bahariridwan/ModusToolbox/tools_3.1 CY_IDE_BT_TOOLS_DIR= --output-sync -j8 all 
+Tools Directory: C:/Users/bahariridwan/ModusToolbox/tools_3.1
+Removing .mtbqueryapi file...
+Searching installed tools in progress...
+Searching installed tools complete
+
+
+Initializing build: mtb-example-empty-app Debug APP_CY8CPROTO-063-BLE GCC_ARM
+
+Prebuild operations complete
+
+Auto-discovery in progress...
+Auto-discovery complete
+Commencing build operations...
+
+Tools Directory: C:/Users/bahariridwan/ModusToolbox/tools_3.1
+
+Constructing build rules...
+Build rules construction complete
+
+==============================================================================
+= Building application =
+==============================================================================
+Generating compilation database file...
+-> ./build/compile_commands.json
+Compilation database file generation complete
+Building 201 file(s)
+Compiling bsps/TARGET_APP_CY8CPROTO-063-BLE/config/GeneratedSource/cycfg.c -DCOMPONENT_APP_CY8CPROTO_063_BLE -DCOMPONENT_BLESS_IPC -DCOMPONENT_CAT1 -DCOMPONENT_CAT1A -DCOMPONENT_CM0P_BLESS -DCOMPONENT_CM4 -DCOMPONENT_CM4_0 -DCOMPONENT_Debug -DCOMPONENT_GCC_ARM -DCOMPONENT_MW_CAT1CM0P -DCOMPONENT_MW_CMSIS -DCOMPONENT_MW_CORE_LIB -DCOMPONENT_MW_CORE_MAKE -DCOMPONENT_MW_MTB_HAL_CAT1 -DCOMPONENT_MW_MTB_PDL_CAT1 -DCOMPONENT_MW_RECIPE_MAKE_CAT1A -DCOMPONENT_MW_RETARGET_IO -DCOMPONENT_PSOC6_01 -DCOMPONENT_SOFTFP -DCORE_NAME_CM4_0=1 -DCYBLE_416045_02_device -DCY_APPNAME_mtb_example_empty_app -DCY_SUPPORTS_DEVICE_VALIDATION -DCY_TARGET_BOARD=APP_CY8CPROTO_063_BLE -DCY_USING_HAL -DDEBUG -DTARGET_APP_CY8CPROTO_063_BLE  -Ibsps/TARGET_APP_CY8CPROTO-063-BLE -Ibsps -I. -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/bluetooth -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config/GeneratedSource -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config -I../mtb_shared/retarget-io/release-v1.5.0 -I../mtb_shared/cat1cm0p/release-v1.1.0/COMPONENT_CAT1A -I../mtb_shared/cat1cm0p/release-v1.1.0 -I../mtb_shared/cmsis/release-v5.8.0/Core/Include -I../mtb_shared/cmsis/release-v5.8.0/Core -I../mtb_shared/cmsis/release-v5.8.0 -I../mtb_shared/core-lib/release-v1.4.1/include -I../mtb_shared/core-lib/release-v1.4.1 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/pin_packages -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A -I../mtb_shared/mtb-hal-cat1/release-v2.4.2 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/triggers -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include_pvt -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/source -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0 -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include/ip -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party 
+Compiling main.c -DCOMPONENT_APP_CY8CPROTO_063_BLE -DCOMPONENT_BLESS_IPC -DCOMPONENT_CAT1 -DCOMPONENT_CAT1A -DCOMPONENT_CM0P_BLESS -DCOMPONENT_CM4 -DCOMPONENT_CM4_0 -DCOMPONENT_Debug -DCOMPONENT_GCC_ARM -DCOMPONENT_MW_CAT1CM0P -DCOMPONENT_MW_CMSIS -DCOMPONENT_MW_CORE_LIB -DCOMPONENT_MW_CORE_MAKE -DCOMPONENT_MW_MTB_HAL_CAT1 -DCOMPONENT_MW_MTB_PDL_CAT1 -DCOMPONENT_MW_RECIPE_MAKE_CAT1A -DCOMPONENT_MW_RETARGET_IO -DCOMPONENT_PSOC6_01 -DCOMPONENT_SOFTFP -DCORE_NAME_CM4_0=1 -DCYBLE_416045_02_device -DCY_APPNAME_mtb_example_empty_app -DCY_SUPPORTS_DEVICE_VALIDATION -DCY_TARGET_BOARD=APP_CY8CPROTO_063_BLE -DCY_USING_HAL -DDEBUG -DTARGET_APP_CY8CPROTO_063_BLE  -Ibsps/TARGET_APP_CY8CPROTO-063-BLE -Ibsps -I. -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/bluetooth -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config/GeneratedSource -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config -I../mtb_shared/retarget-io/release-v1.5.0 -I../mtb_shared/cat1cm0p/release-v1.1.0/COMPONENT_CAT1A -I../mtb_shared/cat1cm0p/release-v1.1.0 -I../mtb_shared/cmsis/release-v5.8.0/Core/Include -I../mtb_shared/cmsis/release-v5.8.0/Core -I../mtb_shared/cmsis/release-v5.8.0 -I../mtb_shared/core-lib/release-v1.4.1/include -I../mtb_shared/core-lib/release-v1.4.1 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/pin_packages -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A -I../mtb_shared/mtb-hal-cat1/release-v2.4.2 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/triggers -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include_pvt -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/source -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0 -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include/ip -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party 
+Compiling bsps/TARGET_APP_CY8CPROTO-063-BLE/cybsp.c -DCOMPONENT_APP_CY8CPROTO_063_BLE -DCOMPONENT_BLESS_IPC -DCOMPONENT_CAT1 -DCOMPONENT_CAT1A -DCOMPONENT_CM0P_BLESS -DCOMPONENT_CM4 -DCOMPONENT_CM4_0 -DCOMPONENT_Debug -DCOMPONENT_GCC_ARM -DCOMPONENT_MW_CAT1CM0P -DCOMPONENT_MW_CMSIS -DCOMPONENT_MW_CORE_LIB -DCOMPONENT_MW_CORE_MAKE -DCOMPONENT_MW_MTB_HAL_CAT1 -DCOMPONENT_MW_MTB_PDL_CAT1 -DCOMPONENT_MW_RECIPE_MAKE_CAT1A -DCOMPONENT_MW_RETARGET_IO -DCOMPONENT_PSOC6_01 -DCOMPONENT_SOFTFP -DCORE_NAME_CM4_0=1 -DCYBLE_416045_02_device -DCY_APPNAME_mtb_example_empty_app -DCY_SUPPORTS_DEVICE_VALIDATION -DCY_TARGET_BOARD=APP_CY8CPROTO_063_BLE -DCY_USING_HAL -DDEBUG -DTARGET_APP_CY8CPROTO_063_BLE  -Ibsps/TARGET_APP_CY8CPROTO-063-BLE -Ibsps -I. -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/bluetooth -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config/GeneratedSource -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config -I../mtb_shared/retarget-io/release-v1.5.0 -I../mtb_shared/cat1cm0p/release-v1.1.0/COMPONENT_CAT1A -I../mtb_shared/cat1cm0p/release-v1.1.0 -I../mtb_shared/cmsis/release-v5.8.0/Core/Include -I../mtb_shared/cmsis/release-v5.8.0/Core -I../mtb_shared/cmsis/release-v5.8.0 -I../mtb_shared/core-lib/release-v1.4.1/include -I../mtb_shared/core-lib/release-v1.4.1 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/pin_packages -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A -I../mtb_shared/mtb-hal-cat1/release-v2.4.2 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/triggers -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include_pvt -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/source -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0 -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include/ip -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party 
+Compiling bsps/TARGET_APP_CY8CPROTO-063-BLE/config/GeneratedSource/cycfg_pins.c -DCOMPONENT_APP_CY8CPROTO_063_BLE -DCOMPONENT_BLESS_IPC -DCOMPONENT_CAT1 -DCOMPONENT_CAT1A -DCOMPONENT_CM0P_BLESS -DCOMPONENT_CM4 -DCOMPONENT_CM4_0 -DCOMPONENT_Debug -DCOMPONENT_GCC_ARM -DCOMPONENT_MW_CAT1CM0P -DCOMPONENT_MW_CMSIS -DCOMPONENT_MW_CORE_LIB -DCOMPONENT_MW_CORE_MAKE -DCOMPONENT_MW_MTB_HAL_CAT1 -DCOMPONENT_MW_MTB_PDL_CAT1 -DCOMPONENT_MW_RECIPE_MAKE_CAT1A -DCOMPONENT_MW_RETARGET_IO -DCOMPONENT_PSOC6_01 -DCOMPONENT_SOFTFP -DCORE_NAME_CM4_0=1 -DCYBLE_416045_02_device -DCY_APPNAME_mtb_example_empty_app -DCY_SUPPORTS_DEVICE_VALIDATION -DCY_TARGET_BOARD=APP_CY8CPROTO_063_BLE -DCY_USING_HAL -DDEBUG -DTARGET_APP_CY8CPROTO_063_BLE  -Ibsps/TARGET_APP_CY8CPROTO-063-BLE -Ibsps -I. -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/bluetooth -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config/GeneratedSource -Ibsps/TARGET_APP_CY8CPROTO-063-BLE/config -I../mtb_shared/retarget-io/release-v1.5.0 -I../mtb_shared/cat1cm0p/release-v1.1.0/COMPONENT_CAT1A -I../mtb_shared/cat1cm0p/release-v1.1.0 -I../mtb_shared/cmsis/release-v5.8.0/Core/Include -I../mtb_shared/cmsis/release-v5.8.0/Core -I../mtb_shared/cmsis/release-v5.8.0 -I../mtb_shared/core-lib/release-v1.4.1/include -I../mtb_shared/core-lib/release-v1.4.1 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/pin_packages -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A -I../mtb_shared/mtb-hal-cat1/release-v2.4.2 -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/COMPONENT_CAT1A/include/triggers -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/include_pvt -I../mtb_shared/mtb-hal-cat1/release-v2.4.2/source -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0 -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/devices/COMPONENT_CAT1A/include/ip -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet/include -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party/ethernet -I../mtb_shared/mtb-pdl-cat1/release-v3.6.0/drivers/third_party 
+    Linking output file mtb-example-empty-app.elf
+C:/Users/bahariridwan/ModusToolbox/tools_3.1/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/bahariridwan/mtw/Blinked_PDL_HAL/build/APP_CY8CPROTO-063-BLE/Debug/mtb-example-empty-app.elf C:/Users/bahariridwan/mtw/Blinked_PDL_HAL/build/APP_CY8CPROTO-063-BLE/Debug/mtb-example-empty-app.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CYBLE-416045-02-device GCC_ARM
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  111164     | 
+  | .text                |  0x10020000   |  14724      | 
+  | .ARM.exidx           |  0x10023984   |  8          | 
+  | .copy.table          |  0x1002398c   |  24         | 
+  | .zero.table          |  0x100239a4   |  8          | 
+  | .data                |  0x0800328c   |  996        | 
+  | .cy_sharedmem        |  0x08003670   |  12         | 
+  | .noinit              |  0x08003680   |  236        | 
+  | .bss                 |  0x0800376c   |  708        | 
+  | .heap                |  0x08003a30   |  273872     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           146852     
+
+
+
+16:39:51 Build Finished. 0 errors, 0 warnings. (took 21s.110ms)
+

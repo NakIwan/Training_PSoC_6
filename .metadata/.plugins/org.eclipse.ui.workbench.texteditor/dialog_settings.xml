@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="button_up_ts"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="button_up_ts"/>
+			<item value="DOUBLE_GAP_MILLIS_MAX"/>
+			<item value="buttonstate_ts"/>
+			<item value="buttonState"/>
+			<item value="HAL_GetTick"/>
+			<item value="DEBOUNCE_DELAY"/>
+			<item value="prev"/>
+			<item value="curretTime"/>
+			<item value="pressed"/>
+			<item value="relaeseTime"/>
+			<item value="CYBSP_USER_BTN"/>
+			<item value="CYBSP_USER_LED"/>
+			<item value="CY_RETARGET_IO_CONVERT_LF_TO_CRLF"/>
+			<item value="timer_init"/>
+		</list>
+		<list key="replacehistory">
+			<item value="currentTime"/>
+			<item value="releaseTime"/>
+			<item value="release"/>
+			<item value="P0_4"/>
+			<item value="P6_3"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1516"/>
+		<item key="DIALOG_Y_ORIGIN" value="23"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
