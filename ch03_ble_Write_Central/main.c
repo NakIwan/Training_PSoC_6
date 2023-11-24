@@ -30,10 +30,10 @@
 #define CYBSP_USER_LED2 P7_1
 #endif
 
-#define TASK_STACK_SIZE (4096u)
+#define TASK_STACK_SIZE (1024u)
 #define	TASK_PRIORITY 	(5u)
 
-#define APP_TIMEOUT_LED_BLINK          (100)
+#define APP_TIMEOUT_LED_BLINK          (200)
 
 #define BAUD_RATE       9600
 #define UART_DELAY      10u
@@ -109,6 +109,7 @@ const cyhal_uart_cfg_t uart_config =
 void app_bt_timeout_led_blink(TimerHandle_t timer_handle)
 {
     static wiced_bool_t led_on = WICED_TRUE;
+	printf("Num at void timout : %d\r\n", led_blink_count);
     if (led_on)
     {
         cyhal_gpio_write(CYBSP_USER_LED, CYBSP_LED_STATE_OFF);
@@ -126,15 +127,14 @@ void app_bt_timeout_led_blink(TimerHandle_t timer_handle)
     }
 }
 
-void app_bt_led_blink(uint8_t num_of_blinks)
+void app_bt_led_blink(uint16_t num_of_blinks)
 {
     if (num_of_blinks)
     {
-    	for (int i = 0; i <num_of_blinks; i++){
+    		printf("Num at void blink : %d\r\n", num_of_blinks);
             led_blink_count = num_of_blinks;
             cyhal_gpio_write(CYBSP_USER_LED , CYBSP_LED_STATE_ON);
             xTimerStart(timer_led_blink, 0);
-    	}
     }
 }
 
@@ -145,7 +145,6 @@ static void String_task(void * arg){
 	char buffer_text[24];
 
     cyhal_uart_init(&uart_obj, TX_US100, RX_US100, NC, NC, NULL, &uart_config);
-
     cyhal_uart_set_baud(&uart_obj, BAUD_RATE, &actualbaud);
 
 	while(1){
@@ -517,9 +516,16 @@ static wiced_bt_gatt_status_t app_bt_write_handler(wiced_bt_gatt_event_data_t *p
 
      for (int i = 0; i < app_gatt_db_ext_attr_tbl_size; i++)
      {
+
          /* Check for a matching handle entry */
          if (app_gatt_db_ext_attr_tbl[i].handle == p_write_req->handle)
          {
+        	 printf("len value %d \r\n", p_write_req->val_len);
+        	 for (int a = 0; a < p_write_req->val_len; a++){
+        		 printf("Pval %d \r\n",p_write_req->p_val[a]);
+        	 }
+//             memset(app_gatt_db_ext_attr_tbl[i].p_write_req->p_val, 0x00, app_gatt_db_ext_attr_tbl[i].max_len);
+
              /* Detected a matching handle in the external lookup table */
              if (app_gatt_db_ext_attr_tbl[i].max_len >= p_write_req->val_len)
              {
@@ -537,13 +543,16 @@ static wiced_bt_gatt_status_t app_bt_write_handler(wiced_bt_gatt_event_data_t *p
                  {
                  	 // Add action when specified handle is written
                  	 case HDLC_PSOC_LED_VALUE:
+                 		uint16_t data;
+                 		if (p_write_req->val_len == 1)data = app_psoc_led[0];
+                 		else if (p_write_req->val_len == 2)data = app_psoc_led[0] << 8 | app_psoc_led[1];//Kalau memakai AIROC lsb first
+//                 		else if (p_write_req->val_len == 2)data = app_psoc_led[1] << 8 | app_psoc_led[0];//Kalau memakai LightBlue msb first
+                  		app_bt_led_blink(data);
+                  		printf("%d\r\n",data);
 
-                  		app_bt_led_blink(app_psoc_led[0]);
-                  		printf("%d\r\n",app_psoc_led[0]);
-
-                 		 for (int i = 0; i < app_psoc_led_len; i++){
-                      		printf("Data %d = %d\r\n",i ,app_psoc_led[i]);
-                 		 }
+//                 		 for (int i = 0; i < app_psoc_led_len; i++){
+//                      		printf("Data %d = %d\r\n",i ,app_psoc_led[i]);
+//                 		 }
 
                   		break;
 

@@ -8,7 +8,7 @@
 uint8_t rx_buf[32];
 uint16_t dataRead;
 uint32_t rx_len = 32;
-
+uint8_t flag = false;
 char txBuffer[100];
 char rxBuffer[5];
 int txcounter = 0;
@@ -24,12 +24,8 @@ void UART_Handler(uint32_t event){
 
 	if((event & CY_SCB_TX_INTR_LEVEL ) == 	CY_SCB_TX_INTR_LEVEL )
 	{
-		txcounter++;
-	}
-
-	if((event & CY_SCB_RX_INTR_NOT_EMPTY) == CY_SCB_RX_INTR_NOT_EMPTY)
-	{
-		rxcounter++;
+    	uint8_t cmd = 0X55;
+        if(Cy_SCB_UART_Transmit(UART_HW, &cmd,2,&UART_context) == CY_RSLT_SUCCESS)Cy_SCB_UART_Receive(UART_HW, &rx_buf, 1,&UART_context);
 	}
 }
 
@@ -80,28 +76,9 @@ int main(void)
    	/* Enabling the SCB block for UART operation */
    	Cy_SCB_UART_Enable(UART_HW);
 
-    /* \x1b[2J\x1b[;H - ANSI ESC sequence for clear screen */
- 	sprintf(txBuffer, "\x1b[2J\x1b[;H");
-
- 	Cy_SCB_UART_Transmit(UART_HW, txBuffer, 12,&UART_context);
-
- 	while((Cy_SCB_UART_GetTransmitStatus(UART_HW,&UART_context) & CY_SCB_UART_TRANSMIT_ACTIVE) != 0){}
-
- 	sprintf(txBuffer, "******************  FreeRTOS UART Example  ****************** \r\n");
-
- 	Cy_SCB_UART_Transmit(UART_HW, txBuffer, strcspn(txBuffer,"\r\n")+2,&UART_context);
- 	while((Cy_SCB_UART_GetTransmitStatus(UART_HW,&UART_context) & CY_SCB_UART_TRANSMIT_ACTIVE) != 0){}
-
     for (;;)
     {
-        sprintf(txBuffer, "Tx = %d\tRx = %d\r\n", txcounter, rxcounter);
-
-        Cy_SCB_UART_Transmit(UART_HW, &txcounter, strcspn(txBuffer,"\r\n")+2,&UART_context);
-        printf("Data Tx = %s",txBuffer);
-    	while((Cy_SCB_UART_GetTransmitStatus(UART_HW,&UART_context) & CY_SCB_UART_TRANSMIT_ACTIVE) != 0){}
-
-        Cy_SCB_UART_Receive(UART_HW, &rxcounter, 1,&UART_context);
-        printf("Data Rx = %s\r\n",rxBuffer);
-    	while((Cy_SCB_UART_GetReceiveStatus	(UART_HW,&UART_context) & CY_SCB_UART_RECEIVE_ACTIVE) != 0){}
+                uint16_t dataUs100 = (uint16_t)rx_buf[0] << 8 | rx_buf[1];
+                printf("Data Rx = %d\r\n",dataUs100);
     }
 }

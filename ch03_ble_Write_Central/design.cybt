@@ -121,7 +121,7 @@
                                             <FieldProperties>
                                                 <Property id="Name" value="New field"/>
                                                 <Property id="Value" value="0"/>
-                                                <Property id="Format" value="f_uint8"/>
+                                                <Property id="Format" value="f_uint16"/>
                                             </FieldProperties>
                                         </Field>
                                     </Fields>

@@ -1,7 +1,7 @@
 Loading the ModusToolbox Technology Packs and Early Access Packs
 Finished loading the ModusToolbox Technology Packs and Early Access Packs (5 ms)
 Loading the tools information
-Finished loading the tools information (97 ms)
+Finished loading the tools information (82 ms)
 Loading the manifest data
 Loading super manfiest files from all sources
 Getting manifests from remote and/or local sources
@@ -75,15 +75,15 @@ Finished download of file 'https://github.com/CyberonEBU/cyberon-mtb-mw-manifest
 Finished download of file 'https://github.com/golioth/mtb-golioth-mw-manifest/raw/main/mtb-golioth-mw-manifest-fv2.xml'
 Finished download of file 'https://github.com/memfault/mtb-memfault-mw-manifest/raw/main/mtb-memfault-mw-manifest-fv2.xml'
 Finished download of file 'https://github.com/sensiml/sensiml-mw-manifest/raw/main/sensiml-mw-manifest-fv2.xml'
-Finished loading the manifest data (5237 ms)
+Finished loading the manifest data (5088 ms)
 Loading the device db
-Finished loading the device db (7503 ms)
+Finished loading the device db (3798 ms)
 0 error(s), 0 warning(s)
 
 Summary: 
 
 BSP: CY8CPROTO-063-BLE
-Template Application(s): key_ch03_ex01_ble
+Template Application(s): ch05_ex02_bond
 Application(s) Root Path: C:/Users/bahariridwan/mtw
 
 Press "Create" to create the selected application(s).
@@ -91,113 +91,128 @@ Press "Create" to create the selected application(s).
 Collecting application data...
 
 Info: The following entered on the command line will create the exact same project as that created with the GUI tool:
-C:/Users/bahariridwan/ModusToolbox/tools_3.1/project-creator/project-creator-cli.exe --board-id CY8CPROTO-063-BLE --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CPROTO-063-BLE --board-commit latest-v4.X --app-path C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Projects/key_ch03_ex01_ble --target-dir C:/Users/bahariridwan/mtw --user-app-name ch03_ble_Write_Central --use-modus-shell
+C:/Users/bahariridwan/ModusToolbox/tools_3.1/project-creator/project-creator-cli.exe --board-id CY8CPROTO-063-BLE --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CPROTO-063-BLE --board-commit latest-v4.X --app-path C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Templates/ch05_ex02_bond --target-dir C:/Users/bahariridwan/mtw --user-app-name ch05_ex02_bond --use-modus-shell
 
-Starting application creation for 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central'.
-Acquiring the application source 'C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Projects/key_ch03_ex01_ble'.
-Copying C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Projects/key_ch03_ex01_ble to C:/Users/bahariridwan/mtw/ch03_ble_Write_Central.
-Copied C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Projects/key_ch03_ex01_ble to C:/Users/bahariridwan/mtw/ch03_ble_Write_Central.
+Starting application creation for 'C:/Users/bahariridwan/mtw/ch05_ex02_bond'.
+Acquiring the application source 'C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Templates/ch05_ex02_bond'.
+Copying C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Templates/ch05_ex02_bond to C:/Users/bahariridwan/mtw/ch05_ex02_bond.
+Copied C:/Users/bahariridwan/ModusToolbox/training-modustoolbox-level3-bluetooth/Type1/Templates/ch05_ex02_bond to C:/Users/bahariridwan/mtw/ch05_ex02_bond.
 Acquired application source successfully.
 Loading the application.
 Loaded the application successfully.
-Processing project 'ch03_ble_Write_Central'.
+Processing project 'ch05_ex02_bond'.
 Starting to commit changes to the filesystem and project 'app'.
-Writing mtb file for asset 'CY8CPROTO-063-BLE' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/deps'.
-Writing mtb file for asset 'btstack' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'freertos' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'abstraction-rtos' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'clib-support' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'cat1cm0p' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'core-lib' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'core-make' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'mtb-hal-cat1' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'mtb-pdl-cat1' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'recipe-make-cat1a' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'cmsis' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs'.
-Writing mtb file for asset 'btstack-integration' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/deps'.
-Writing mtb file for asset 'retarget-io' to the folder 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/deps'.
-Starting: git -C C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CPROTO-063-BLE TARGET_CY8CPROTO-063-BLE
+Writing mtb file for asset 'CY8CPROTO-063-BLE' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/deps'.
+Writing mtb file for asset 'btstack' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'freertos' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'abstraction-rtos' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'clib-support' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'cat1cm0p' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'core-lib' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'core-make' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'mtb-hal-cat1' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'mtb-pdl-cat1' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'recipe-make-cat1a' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'cmsis' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs'.
+Writing mtb file for asset 'btstack-integration' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/deps'.
+Writing mtb file for asset 'emeeprom' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/deps'.
+Writing mtb file for asset 'retarget-io' to the folder 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/deps'.
+Starting: git -C C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CPROTO-063-BLE TARGET_CY8CPROTO-063-BLE
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack-integration/release-v4.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/emeeprom clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/emeeprom release-v2.20.0
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Cloning into 'TARGET_CY8CPROTO-063-BLE'...
+Cloning into 'release-v2.20.0'...
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack-integration/release-v4.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/emeeprom clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/emeeprom release-v2.20.0
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CPROTO-063-BLE TARGET_CY8CPROTO-063-BLE
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CPROTO-063-BLE TARGET_CY8CPROTO-063-BLE
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.2.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p clone --origin cypress --no-checkout https://github.com/Infineon/cat1cm0p release-v1.3.0
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Cloning into 'release-v1.3.0'...
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.4.3 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.2.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.7.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1 clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/mtb-hal-cat1 release-v2.5.4
+Cloning into '
+release-v2.5.4'...
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1 clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/mtb-pdl-cat1 release-v3.8.0
+Cloning into 'release-v3.8.0'...
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/recipe-make-cat1a release-v2.1.2
+Cloning into 'release-v2.1.2'...
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p clone --origin cypress --no-checkout https://github.com/Infineon/cat1cm0p release-v1.3.0
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.7.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack-integration/release-v4.5.0 -c advice.detachedHead=false checkout release-v4.5.0 --force
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.4.3 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/recipe-make-cat1a release-v2.1.2
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 -c advice.detachedHead=false checkout release-v1.5.0 --force
-HEAD is now at
- db7f962 Upload retarget-io [1515]
+HEAD is now at db7f962 Upload retarget-io [1515]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 -c advice.detachedHead=false checkout release-v1.5.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 -c advice.detachedHead=false checkout release-v3.8.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack-integration/release-v4.5.0 -c advice.detachedHead=false checkout release-v4.5.0 --force
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/emeeprom/release-v2.20.0 -c advice.detachedHead=false checkout release-v2.20.0 --force
+HEAD is now at 0eeaba0 Upload emeeprom 2.20.0.1133
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/emeeprom/release-v2.20.0 -c advice.detachedHead=false checkout release-v2.20.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs/TARGET_CY8CPROTO-063-BLE -c advice.detachedHead=false checkout release-v4.2.0 --force
 HEAD is now at 2c412ee Upload btstack-integration 4.5.0.2323 [1771]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack-integration/release-v4.5.0 -c advice.detachedHead=false checkout release-v4.5.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs/TARGET_CY8CPROTO-063-BLE -c advice.detachedHead=false checkout release-v4.2.0 --force
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 -c advice.detachedHead=false checkout release-v1.7.4 --force
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.0 -c advice.detachedHead=false checkout release-v10.5.0 --force
-HEAD is now at 44dd170 Upload btstack 3.8.0.18197 [1771]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 -c advice.detachedHead=false checkout release-v3.8.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 -c advice.detachedHead=false checkout release-v1.4.2 --force
 HEAD is now at e70e872 Upload TARGET_CY8CPROTO-063-BLE [1515]
-Success: git -C C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs/TARGET_CY8CPROTO-063-BLE -c advice.detachedHead=false checkout release-v4.2.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.2.0 -c advice.detachedHead=false checkout release-v1.2.0 --force
-HEAD is now at 2ae0972 Upload abstraction-rtos [1771]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 -c advice.detachedHead=false checkout release-v1.7.4 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 -c advice.detachedHead=false checkout release-v3.2.2 --force
+Success: git -C C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs/TARGET_CY8CPROTO-063-BLE -c advice.detachedHead=false checkout release-v4.2.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 -c advice.detachedHead=false checkout release-v3.8.0 --force
 HEAD is now at 1030534 Upload freertos 10.5.0.595 [1864]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.0 -c advice.detachedHead=false checkout release-v10.5.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 -c advice.detachedHead=false checkout release-v1.7.4 --force
+HEAD is now at 2ae0972 Upload abstraction-rtos [1771]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.4 -c advice.detachedHead=false checkout release-v1.7.4 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 -c advice.detachedHead=false checkout release-v1.4.2 --force
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1 clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/mtb-hal-cat1 release-v2.5.4
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
 HEAD is now at 97cf620 Upload clib-support [1864]
+HEAD is now at a74be8b Upload core-lib [1796]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 -c advice.detachedHead=false checkout release-v1.4.2 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.7.0 -c advice.detachedHead=false checkout release-v3.7.0 --force
-HEAD is now at 68f0d3e Upload cat1cm0p 1.2.0.325 [1884]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.2.0 -c advice.detachedHead=false checkout release-v1.2.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.4.3 -c advice.detachedHead=false checkout release-v2.4.3 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 -c advice.detachedHead=false checkout release-v3.2.2 --force
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.3.0 -c advice.detachedHead=false checkout release-v1.3.0 --force
 HEAD is now at b962a1e Upload core-make 3.2.2.4739 [1647]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 -c advice.detachedHead=false checkout release-v3.2.2 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.1 -c advice.detachedHead=false checkout release-v2.1.1 --force
-HEAD is now at a74be8b Upload core-lib [1796]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 -c advice.detachedHead=false checkout release-v2.1.2 --force
+HEAD is now at 68c7f15 Upload cat1cm0p 1.3.0.366 [1976]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.3.0 -c advice.detachedHead=false checkout release-v1.3.0 --force
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 -c advice.detachedHead=false checkout release-v5.8.0 --force
-HEAD is now at 9cbdee3 Upload recipe-make-cat1a 2.1.1.4648 [1380]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.1 -c advice.detachedHead=false checkout release-v2.1.1 --force
-HEAD is now at 94eb787 Upload mtb-pdl-cat1 3.7.0.27344 [1864]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.7.0 -c advice.detachedHead=false checkout release-v3.7.0 --force
-HEAD is now at 0373e75 Upload mtb-hal-cat1 [1864]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.4.3 -c advice.detachedHead=false checkout release-v2.4.3 --force
+HEAD is now at
+ 0446103 Upload recipe-make-cat1a 2.1.2.4871 [1976]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 -c advice.detachedHead=false checkout release-v2.1.2 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 -c advice.detachedHead=false checkout release-v2.5.4 --force
+HEAD is now at 44dd170 Upload btstack 3.8.0.18197 [1771]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/btstack/release-v3.8.0 -c advice.detachedHead=false checkout release-v3.8.0 --force
 HEAD is now at ce02f64 Upload cmsis 5.8.0.50
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 -c advice.detachedHead=false checkout release-v5.8.0 --force
+HEAD is now at 4090e1a Upload mtb-hal-cat1 [1976]
+
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 -c advice.detachedHead=false checkout release-v2.5.4 --force
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1 clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/mtb-pdl-cat1 release-v3.8.0
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.8.0 -c advice.detachedHead=false checkout release-v3.8.0 --force
+HEAD is now at 71f964c Upload mtb-pdl-cat1 3.8.0.28624 [1976]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.8.0 -c advice.detachedHead=false checkout release-v3.8.0 --force
 Requested to change the active target to 'APP_CY8CPROTO-063-BLE'.
-Removed the file 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/deps/TARGET_CY8CPROTO-063-BLE.mtb'.
-Writing the file 'C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/libs/app.mk'.
+Removed the file 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/deps/TARGET_CY8CPROTO-063-BLE.mtb'.
+Writing the file 'C:/Users/bahariridwan/mtw/ch05_ex02_bond/libs/app.mk'.
 Successfully committed changes to the project 'app'.
-Project "ch03_ble_Write_Central" created successfully.
-Successfully created "ch03_ble_Write_Central" application.
+Project "ch05_ex02_bond" created successfully.
+Successfully created "ch05_ex02_bond" application.
+WARNING:'C:/Users/bahariridwan/mtw/ch05_ex02_bond' contains template configuration files for some BSPs but not for 'TARGET_CY8CPROTO-063-BLE'. Therefore, manual configuration of the chosen BSP is likely required for the application to function as intended.
+
 ==============================================================================
-= Export "ch03_ble_Write_Central" application to Eclipse IDE for ModusToolbox™ =
+= Export "ch05_ex02_bond" application to Eclipse IDE for ModusToolbox™ =
 ==============================================================================
-make eclipse CY_IDE_PRJNAME=ch03_ble_Write_Central CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=3.1 CY_TOOLS_PATHS=C:/Users/bahariridwan/ModusToolbox/tools_3.1 MTB_MAKE_ECLIPSE_FORCE_REGENERATE_PROJECT=1
+make eclipse CY_IDE_PRJNAME=ch05_ex02_bond CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=3.1 CY_TOOLS_PATHS=C:/Users/bahariridwan/ModusToolbox/tools_3.1 MTB_MAKE_ECLIPSE_FORCE_REGENERATE_PROJECT=1
 Tools Directory: C:/Users/bahariridwan/ModusToolbox/tools_3.1
 Removing .mtbqueryapi file...
 Searching installed tools in progress...
@@ -216,19 +231,19 @@ Build rules construction complete
 Generating compilation database file...
 -> ./build/compile_commands.json
 Compilation database file generation complete
-Generated C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/.cproject
-Generated C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/.project
-Generated C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/.mtbLaunchConfigs/ch03_ble_Write_Central Attach (KitProg3_MiniProg4).launch
-Generated C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/.mtbLaunchConfigs/ch03_ble_Write_Central Debug (KitProg3_MiniProg4).launch
-Generated C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/.mtbLaunchConfigs/ch03_ble_Write_Central Erase (KitProg3_MiniProg4).launch
-Generated C:/Users/bahariridwan/mtw/ch03_ble_Write_Central/.mtbLaunchConfigs/ch03_ble_Write_Central Program (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ch05_ex02_bond/.cproject
+Generated C:/Users/bahariridwan/mtw/ch05_ex02_bond/.project
+Generated C:/Users/bahariridwan/mtw/ch05_ex02_bond/.mtbLaunchConfigs/ch05_ex02_bond Attach (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ch05_ex02_bond/.mtbLaunchConfigs/ch05_ex02_bond Debug (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ch05_ex02_bond/.mtbLaunchConfigs/ch05_ex02_bond Erase (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ch05_ex02_bond/.mtbLaunchConfigs/ch05_ex02_bond Program (KitProg3_MiniProg4).launch
 Instructions:
 1. Open Eclipse IDE for ModusToolbox
 2. Select 'Import Existing Application In-Place' from the QuickPanel
 3. Browse to the application root directory
-The application "ch03_ble_Write_Central" was successfully exported to Eclipse IDE for ModusToolbox™.
-0 error(s), 0 warning(s)
+The application "ch05_ex02_bond" was successfully exported to Eclipse IDE for ModusToolbox™.
+0 error(s), 1 warning(s)
 
 Summary:
 
-Successfully created and exported "ch03_ble_Write_Central" application.
+Successfully created and exported "ch05_ex02_bond" application.

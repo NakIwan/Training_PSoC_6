@@ -119,8 +119,6 @@ int main(void)
             cyhal_uart_read(&uart_obj, rx_buf, &rx_length);
 
 //            uint8_t length = sizeof(rx_buf) / sizeof(*rx_buf);
-//
-
 
             Distance = (uint16_t)rx_buf[0] << 8 | rx_buf[1];
             printf("value = %d\r\n",Distance);
