@@ -136,6 +136,7 @@ float tp, press;
 	{
 		bmp180.readValue(&tp, &press, 100);
 		printf("Temp : %0.2f \tPress : %0.2f \r\n", tp, press);
-		cyhal_system_delay_ms(500);
+		scaning_i2c();
+		cyhal_system_delay_ms(1000);
 	}
 }
