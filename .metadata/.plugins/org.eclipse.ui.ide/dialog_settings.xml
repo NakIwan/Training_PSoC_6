@@ -53,6 +53,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\bahariridwan\mtw\Try_OLED_U8g2"/>
 			<item value="C:\Users\bahariridwan\Downloads\Psoc_6_button-main"/>
 		</list>
 	</section>
