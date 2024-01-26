@@ -1,7 +1,7 @@
 Loading the ModusToolbox Technology Packs and Early Access Packs
-Finished loading the ModusToolbox Technology Packs and Early Access Packs (6 ms)
+Finished loading the ModusToolbox Technology Packs and Early Access Packs (2 ms)
 Loading the tools information
-Finished loading the tools information (114 ms)
+Finished loading the tools information (74 ms)
 Loading the manifest data
 Loading super manfiest files from all sources
 Getting manifests from remote and/or local sources
@@ -75,15 +75,15 @@ Finished download of file 'https://github.com/CyberonEBU/cyberon-mtb-mw-manifest
 Finished download of file 'https://github.com/golioth/mtb-golioth-mw-manifest/raw/main/mtb-golioth-mw-manifest-fv2.xml'
 Finished download of file 'https://github.com/memfault/mtb-memfault-mw-manifest/raw/main/mtb-memfault-mw-manifest-fv2.xml'
 Finished download of file 'https://github.com/sensiml/sensiml-mw-manifest/raw/main/sensiml-mw-manifest-fv2.xml'
-Finished loading the manifest data (5694 ms)
+Finished loading the manifest data (5179 ms)
 Loading the device db
-Finished loading the device db (10598 ms)
+Finished loading the device db (6999 ms)
 0 error(s), 0 warning(s)
 
 Summary: 
 
 BSP: CY8CKIT-062S2-43012
-Template Application(s): Empty App
+Template Application(s): ButtonApplicationFreeRTOS
 Application(s) Root Path: C:/Users/bahariridwan/mtw
 
 Press "Create" to create the selected application(s).
@@ -91,76 +91,130 @@ Press "Create" to create the selected application(s).
 Collecting application data...
 
 Info: The following entered on the command line will create the exact same project as that created with the GUI tool:
-C:/Users/bahariridwan/ModusToolbox/tools_3.1/project-creator/project-creator-cli.exe --board-id CY8CKIT-062S2-43012 --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062S2-43012 --board-commit latest-v4.X --app-id mtb-example-empty-app --app-uri https://github.com/Infineon/mtb-example-empty-app --app-commit latest-v4.X --target-dir C:/Users/bahariridwan/mtw --user-app-name Button_FreeRTOS --use-modus-shell
+C:/Users/bahariridwan/ModusToolbox/tools_3.1/project-creator/project-creator-cli.exe --board-id CY8CKIT-062S2-43012 --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062S2-43012 --board-commit latest-v4.X --app-path C:/Users/bahariridwan/Test/ButtonApplicationFreeRTOS --target-dir C:/Users/bahariridwan/mtw --user-app-name ButtonApplicationFreeRTOS --use-modus-shell
 
-Starting application creation for 'C:/Users/bahariridwan/mtw/Button_FreeRTOS'.
-Acquiring the application source 'https://github.com/Infineon/mtb-example-empty-app'.
+Starting application creation for 'C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS'.
+Acquiring the application source 'C:/Users/bahariridwan/Test/ButtonApplicationFreeRTOS'.
+Copying C:/Users/bahariridwan/Test/ButtonApplicationFreeRTOS to C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS.
+Copied C:/Users/bahariridwan/Test/ButtonApplicationFreeRTOS to C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS.
 Acquired application source successfully.
 Loading the application.
 Loaded the application successfully.
-Processing project 'Button_FreeRTOS'.
+Processing project 'ButtonApplicationFreeRTOS'.
 Starting to commit changes to the filesystem and project 'mtb-example-empty-app'.
-Writing mtb file for asset 'CY8CKIT-062S2-43012' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/deps'.
-Writing mtb file for asset 'cat1cm0p' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Writing mtb file for asset 'core-lib' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Writing mtb file for asset 'core-make' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Writing mtb file for asset 'mtb-hal-cat1' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Writing mtb file for asset 'mtb-pdl-cat1' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Writing mtb file for asset 'recipe-make-cat1a' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Writing mtb file for asset 'cmsis' to the folder 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs'.
-Starting: git -C C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062S2-43012 TARGET_CY8CKIT-062S2-43012
+Writing mtb file for asset 'CY8CKIT-062S2-43012' to the folder 'C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/deps'.
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/display-oled-ssd1306/release-v1.0.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/emwin/release-v6.32.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.001 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/display-oled-ssd1306/release-v1.0.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062S2-43012 TARGET_CY8CKIT-062S2-43012
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.5 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/emwin/release-v6.32.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.4.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.001 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Cloning into 'TARGET_CY8CKIT-062S2-43012'...
+Success: git -C C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062S2-43012 TARGET_CY8CKIT-062S2-43012
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.5 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.4.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.9.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Success: git -C C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs clone --origin cypress --no-checkout https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062S2-43012 TARGET_CY8CKIT-062S2-43012
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.4.0 -c advice.detachedHead=false checkout release-v1.4.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/display-oled-ssd1306/release-v1.0.2 -c advice.detachedHead=false checkout release-v1.0.2 --force
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 -c advice.detachedHead=false checkout release-v1.5.0 --force
+HEAD is now at d604a6f Upload display-oled-ssd1306 [347]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/display-oled-ssd1306/release-v1.0.2 -c advice.detachedHead=false checkout release-v1.0.2 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/emwin/release-v6.32.0 -c advice.detachedHead=false checkout release-v6.32.0 --force
+HEAD is now at db7f962 Upload retarget-io [1515]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/retarget-io/release-v1.5.0 -c advice.detachedHead=false checkout release-v1.5.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.001 -c advice.detachedHead=false checkout release-v10.5.001 --force
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.9.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 -c advice.detachedHead=false checkout release-v3.2.2 --force
+Starting: git -C C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/libs/TARGET_CY8CKIT-062S2-43012 -c advice.detachedHead=false checkout release-v4.2.0 --force
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 -c advice.detachedHead=false checkout release-v1.4.2 --force
+HEAD is now at c2c8a9b Upload freertos 10.5.001.632 [2049]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/freertos/release-v10.5.001 -c advice.detachedHead=false checkout release-v10.5.001 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.5 -c advice.detachedHead=false checkout release-v1.7.5 --force
+HEAD is now at 5728609 Upload emwin 6.32.0.345 [1459]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/emwin/release-v6.32.0 -c advice.detachedHead=false checkout release-v6.32.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.4.0 -c advice.detachedHead=false checkout release-v1.4.0 --force
+HEAD is now at a085cc6 Upload TARGET_CY8CKIT-062S2-43012 [1515]
+Success: git -C C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/libs/TARGET_CY8CKIT-062S2-43012 -c advice.detachedHead=false checkout release-v4.2.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 -c advice.detachedHead=false checkout release-v5.8.0 --force
+HEAD is now at 97cf620 Upload clib-support [1864]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/clib-support/release-v1.4.2 -c advice.detachedHead=false checkout release-v1.4.2 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 -c advice.detachedHead=false checkout release-v3.2.2 --force
+HEAD is now at b679710 Upload abstraction-rtos [2106]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/abstraction-rtos/release-v1.7.5 -c advice.detachedHead=false checkout release-v1.7.5 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 -c advice.detachedHead=false checkout release-v2.5.4 --force
 HEAD is now at ddcdedb Upload cat1cm0p 1.4.0.368 [2049]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cat1cm0p/release-v1.4.0 -c advice.detachedHead=false checkout release-v1.4.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs/TARGET_CY8CKIT-062S2-43012 -c advice.detachedHead=false checkout release-v4.2.0 --force
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 fetch --recurse-submodules=no --tags --force cypress --update-head-ok "refs/heads/*:refs/heads/*" --quiet
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 -c advice.detachedHead=false checkout release-v2.5.4 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
 HEAD is now at b962a1e Upload core-make 3.2.2.4739 [1647]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-make/release-v3.2.2 -c advice.detachedHead=false checkout release-v3.2.2 --force
 Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.9.0 -c advice.detachedHead=false checkout release-v3.9.0 --force
-HEAD is now at a74be8b Upload core-lib [1796]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 -c advice.detachedHead=false checkout release-v2.1.2 --force
-HEAD is now at a085cc6 Upload TARGET_CY8CKIT-062S2-43012 [1515]
-Success: git -C C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs/TARGET_CY8CKIT-062S2-43012 -c advice.detachedHead=false checkout release-v4.2.0 --force
-Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 -c advice.detachedHead=false checkout release-v5.8.0 --force
-HEAD is now at 0446103 Upload recipe-make-cat1a 2.1.2.4871 [1976]
-Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 -c advice.detachedHead=false checkout release-v2.1.2 --force
 HEAD is now at ce02f64 Upload cmsis 5.8.0.50
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/cmsis/release-v5.8.0 -c advice.detachedHead=false checkout release-v5.8.0 --force
+Starting: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 -c advice.detachedHead=false checkout release-v2.1.2 --force
+HEAD is now at a74be8b Upload core-lib [1796]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/core-lib/release-v1.4.1 -c advice.detachedHead=false checkout release-v1.4.1 --force
+HEAD is now at 0446103 Upload recipe-make-cat1a 2.1.2.4871 [1976]
+Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/recipe-make-cat1a/release-v2.1.2 -c advice.detachedHead=false checkout release-v2.1.2 --force
 HEAD is now at 4090e1a Upload mtb-hal-cat1 [1976]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-hal-cat1/release-v2.5.4 -c advice.detachedHead=false checkout release-v2.5.4 --force
 HEAD is now at 96bbf19 Upload mtb-pdl-cat1 3.9.0.29592 [2049]
 Success: git -C C:/Users/bahariridwan/mtw/mtb_shared/mtb-pdl-cat1/release-v3.9.0 -c advice.detachedHead=false checkout release-v3.9.0 --force
 Requested to change the active target to 'APP_CY8CKIT-062S2-43012'.
-Removed the file 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/deps/TARGET_CY8CKIT-062S2-43012.mtb'.
-Writing the file 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/libs/app.mk'.
+Removed the file 'C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/deps/TARGET_CY8CKIT-062S2-43012.mtb'.
+Writing the file 'C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/libs/app.mk'.
 Successfully committed changes to the project 'mtb-example-empty-app'.
-Project "Button_FreeRTOS" created successfully.
-Application creation failed.
-ERROR:could not remove directory 'C:/Users/bahariridwan/mtw/Button_FreeRTOS/.git'
-
-Skipping export of the "Button_FreeRTOS" application to Eclipse IDE for ModusToolbox™.
-1 error(s), 0 warning(s)
+Project "ButtonApplicationFreeRTOS" created successfully.
+Successfully created "ButtonApplicationFreeRTOS" application.
+==============================================================================
+= Export "ButtonApplicationFreeRTOS" application to Eclipse IDE for ModusToolbox™ =
+==============================================================================
+make eclipse CY_IDE_PRJNAME=ButtonApplicationFreeRTOS CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=3.1 CY_TOOLS_PATHS=C:/Users/bahariridwan/ModusToolbox/tools_3.1 MTB_MAKE_ECLIPSE_FORCE_REGENERATE_PROJECT=1
+Tools Directory: C:/Users/bahariridwan/ModusToolbox/tools_3.1
+Removing .mtbqueryapi file...
+Searching installed tools in progress...
+Searching installed tools complete
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062S2-43012 GCC_ARM
+Prebuild operations complete
+Auto-discovery in progress...
+Auto-discovery complete
+Commencing build operations...
+Tools Directory: C:/Users/bahariridwan/ModusToolbox/tools_3.1
+Constructing build rules...
+Build rules construction complete
+==============================================================================
+= Building application =
+==============================================================================
+Generating compilation database file...
+-> ./build/compile_commands.json
+Compilation database file generation complete
+Generated C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/.cproject
+Generated C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/.project
+Generated C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/.mtbLaunchConfigs/ButtonApplicationFreeRTOS Attach (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/.mtbLaunchConfigs/ButtonApplicationFreeRTOS Debug (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/.mtbLaunchConfigs/ButtonApplicationFreeRTOS Erase (KitProg3_MiniProg4).launch
+Generated C:/Users/bahariridwan/mtw/ButtonApplicationFreeRTOS/.mtbLaunchConfigs/ButtonApplicationFreeRTOS Program (KitProg3_MiniProg4).launch
+Instructions:
+1. Open Eclipse IDE for ModusToolbox
+2. Select 'Import Existing Application In-Place' from the QuickPanel
+3. Browse to the application root directory
+The application "ButtonApplicationFreeRTOS" was successfully exported to Eclipse IDE for ModusToolbox™.
+0 error(s), 0 warning(s)
 
 Summary:
 
-ERROR:Failed to create and export "Button_FreeRTOS" application.
-
+Successfully created and exported "ButtonApplicationFreeRTOS" application.

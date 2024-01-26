@@ -14,6 +14,7 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/UART_PDL_HAL/.mtbLaunchConfigs/UART_PDL_HAL Debug (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/Button_double_singgle_long_press/.mtbLaunchConfigs/Button_double_singgle_long_press Debug (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/Try_OLED_U8g2/.mtbLaunchConfigs/Try_OLED_U8g2 Debug (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/ButtonApplicationFreeRTOS/.mtbLaunchConfigs/ButtonApplicationFreeRTOS Debug (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
         </favorites>
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
@@ -38,6 +39,7 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/UART_PDL_HAL/.mtbLaunchConfigs/UART_PDL_HAL Program (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/Button_double_singgle_long_press/.mtbLaunchConfigs/Button_double_singgle_long_press Program (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/Try_OLED_U8g2/.mtbLaunchConfigs/Try_OLED_U8g2 Program (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/ButtonApplicationFreeRTOS/.mtbLaunchConfigs/ButtonApplicationFreeRTOS Program (KitProg3_MiniProg4).launch&quot;/&gt;&#13;&#10;"/>
         </favorites>
     </launchGroup>
 </launchHistory>
